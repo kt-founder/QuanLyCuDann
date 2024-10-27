@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thông tin chung cư</title>
+	<style>
+		/* CSS cho giao diện người dùng */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		.container {
+			width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		form {
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+
+		button[type="submit"] {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th,
+		td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 5px 10px;
+			background-color: #4CAF50;
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+		}
+
+		.btn:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Thông tin chung cư</h1>
+		<form>
+			<h2>Thêm chung cư</h2>
+
+			<label for="id">Mã chung cư:</label>
+			<input type="text"  id="id"><br>
+			<label for="name">Tên chung cư:</label>
+			<input type="text" id="name" name="name"><br>
+			<label for="address">Địa chỉ:</label>
+			<input type="text"  address="address"><br>
+			<button type="submit">Thêm</button>
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Mã chung cư</th>
+					<th>Tên chung cư</th>
+					<th>Địa chỉ</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>CC001</td>
+					<td>Chung cư A</td>
+					<td>123 Đường A, Quận 1, TP. HCM</td>
+					<td><a href="#" class="btn">Sửa</a></td>
+					<td><a href="#" class="btn">Xóa</a></td>
+				</tr>
+				<tr>
+					<td>CC002</td>
+					<td>Chung cư B</td>
+					<td>456 Đường B, Quận 2, TP. HCM</td>
+					<td><a href="#" class="btn">Sửa</a></td>
+					<td><a href="#" class="btn">Xóa</a></td>
+				</tr>
+				<tr>
+					<td>CC003</td>
+					<td>Chung cư C</td>
+					<td>789 Đường C, Quận 3, TP. HCM</td>
+					<td><a href="#" class="btn">Sửa</a></td>
+					<td><a href="#" class="btn">Xóa</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

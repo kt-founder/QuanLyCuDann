@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quản lý dân cư</title>
+    <link rel="stylesheet" type="style" href="user.css">
+  </head>
+  <body>
+    <h1>Quản lý cư dân</h1>
+    
+    <form>
+      <h2>Thêm cư dân</h2>
+      
+      <label for="id">Mã cư dân:</label>
+      <input type="text" id="id" id="id"><br>
+      <label for="name">Tên:</label>
+      <input type="text" id="name" name="name"><br>
+      
+	  <label for="condominumId">Mã căn hộ:</label>
+      <input type="text" id="condominumId" condiminumId="condiminumId"><br>
+      
+      <label for="phone">Số điện thoại:</label>
+      <input type="text" id="phone" phone="phone"><br>
+      
+      <label for="cccd">CCCD:</label>
+      <input type="text" id="cccd" cccd="cccd"><br>
+      
+      <label>Dịch vụ:</label>
+<input type="checkbox" name="service" value="dien">Điện
+<input type="checkbox" name="service" value="nuoc">Nước
+<input type="checkbox" name="service" value="giuxe">Giữ xe
+<input type="checkbox" name="service" value="thangmay">Thang máy
+<button type="submit">Thêm</button>
+    </form>
+    
+    <hr>
+    
+    <table>
+      <tr>
+        <th>Mã cư dân</th>
+        <th>Tên</th>
+        <th>Mã căn hộ</th>
+        <th>Số điện thoại</th>
+        <th>CCCD</th>
+        <th>Dịch vụ</th>
+      </tr>
+      <tr>
+		<td>1</td>
+        <td>Nguyễn Văn Hòa</td>
+        <td>1001</td>
+        <td>0988867505</td>
+        <td>110213375812</td>
+        <td>Nước, Điện, Thang máy</td>
+        <td>
+          <a href="#">Sửa</a>
+          <a href="#">Xóa</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Nguyễn Thị Nhung</td>
+        <td>1002</td>
+        <td>0988967505</td>
+        <td>110563375812</td>
+        <td>Nước, Điện, Thang máy, Giữ xe</td>
+        <td>
+        <td>
+          <a href="#">Sửa</a>
+          <a href="#">Xóa</a>
+        </td>
+      </tr>
+    </table>
+    
+  </body>
+</html>

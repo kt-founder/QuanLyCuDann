@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trang chủ Quản lý cư dân</title>
+  <style>
+    /* CSS cho giao diện người dùng */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 4px;
+    }
+    
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Trang chủ Quản lý cư dân</h1>
+    
+    <a href="/apartment" class="button">Quản lý chung cư</a>
+    <a href="/condominum" class="button">Quản lý căn hộ</a>
+    <a href="/dichvu" class="button">Dịch vụ</a>
+    <a href="/chiphi" class="button">Chi phí</a>
+    <a href="thanh-toan.html" class="button">Thanh toán</a>
+  </div>
+  <img th:src="@{/images/anh.png}"/>
+</body>
+</html>
